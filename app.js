@@ -27,6 +27,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+// require model
+//var header = require('./model/header');
+
 app.get('/', routes.index);
 app.get('/users', user.list);
 
